@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sunshine{
+    height: 404px;
+    width: 820px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
