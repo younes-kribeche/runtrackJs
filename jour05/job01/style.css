@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 125, 0);
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 8vh;
+    width: 90%;
+
+}
+
+h1{
+    color: White;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    color: #007D00;
+    text-shadow: 1px 1px;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.bouton1{
+    height: 4vh;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.formulaire_inscription{
+    padding: 20px;
+    height: 48vh;
+    width: 835px;
+    margin-top: 5vh;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.div_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_double_input{
+    display: flex;
+    height: 68px;
+}
+
+.div_double_input2{
+    display: flex;
+    height: 80px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+input{
+    width: 386px;
+    margin-right: 20px;
+    margin-left: 10px;
+    background-color: rgba(115, 115, 115, 0.101);
+    border-color: rgb(0, 125, 0);
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    height: 68px;
+}
+
+.email input{
+    width: 810px;
+}
+
+.montrer_mdp{
+    height: 5vh;
+    margin-left: 2.5%;
+    font-size: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.montrer_mdp input{
+    width: 15px;
+    height: 2vh;
+    margin: 0;
+}
+
+#checkbox:hover{
+    cursor: pointer;
+}
+
+
+.bouton_formulaire1{
+    color: white;
+    background-color: rgb(0, 138, 0);
+    width: 20%;
+    height: 4vh;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 39%;
+    border: none;
+}
+
+.bouton_formulaire1:hover,
+.bouton_formulaire2:hover{
+    cursor: pointer;
+}
+
+.bouton_formulaire2{
+    color: white;
+    background-color: rgb(0, 138, 0);
+    width: 20%;
+    height: 4vh;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+}
+
+
+.formulaire_connexion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    width: 550px;
+    margin-top: 5vh;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.div_message_erreur1,
+.div_message_erreur2,
+.div_message_erreur3,
+.div_message_erreur4,
+.div_message_erreur5,
+.div_message_erreur6{
+    margin-left: 10px;
+    font-size: 10px;
+}

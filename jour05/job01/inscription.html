@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Jour 05</h1>
+    <div>
+      <button class="bouton1"><a href="inscription.html">Inscription</a></button>
+      <button class="bouton1"><a href="connexion.html">Connexion</a></button>
+    </div>
+  </header>
+
+  <h2>Inscription</h2>
+  <form method="post" class="formulaire_inscription">
+    <div class="div_double_input">
+
+      <div class="div_input">
+        <label for="Nom">Nom</label>
+        <input minlength="2" type="text" id="nom">
+        <div id="div_message_erreur1"></div>
+      </div>
+
+
+      <div class="div_input">
+        <label for="Prénom">Prénom</label>
+        <input type="text" id="prenom">
+        <div id="div_message_erreur2"></div>
+      </div>
+    </div>
+
+    <div class="div_double_input">
+      <div class="email">
+        <label for="Email">Email</label>
+        <input type="email" id="mail">
+        <div id="div_message_erreur3"></div>
+      </div>
+    </div>
+  
+    <div class="div_double_input"> 
+      <div class="div_input">
+        <label for="Adresse">Adresse</label>
+        <input type="text" id="adresse">
+        <div id="div_message_erreur4"></div>
+      </div>
+
+      <div class="div_input">
+        <label for="Code postale">Code postale</label>
+        <input type="number" id="code_postale">
+        <div id="div_message_erreur5"></div>
+      </div>
+      
+    </div>
+
+    <div class="div_double_input2">
+      <div class="div_input">
+        <label for="Mot de passe">Mot de passe</label>
+        <input minlength="10" type="password" id="mot_de_passe">
+        <div id="div_message_erreur6"></div>
+        <div class="montrer_mdp"><input type="checkbox" id="checkbox"><p>Montrer le mot de passe.</p></div>
+      </div>
+      
+      <div class="div_input">
+        <label for="Confirmer mot de passe">Confirmer le mot de passe</label>
+        <input minlength="10" type="password" id="confirmation_mdp" oninput="check()">
+        <div id="div_message_erreur7"></div>
+      </div>
+    </div>
+    <button type="submit" class="bouton_formulaire1">S'inscrire</button>
+  </form>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
