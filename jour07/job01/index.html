@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Icons-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+              
+</head>
+<body>
+                <!------------------------HEADER----------------------->
+    <header class="row">
+        <nav>
+            <div class="red darken-3 nav-wrapper">
+                <a href="index.html" class="brand-logo center"><i class="large material-icons">cloud_queue</i></a>     
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+                <div class="right input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+        </div>
+        </nav>
+    </header>
+                <!------------------------FORMULAIRE----------------------->
+    <section>
+        <form action="#" class="row grey-text">
+            <p>Civilité:</p>
+            <p>
+              <label class="col s1">
+                <input class="with-gap" name="genre" type="radio" />
+                <span>Monsieur</span>
+              </label>
+            </p>
+            <p>
+              <label class="col s1">
+                <input class="with-gap" name="genre" type="radio"  />
+                <span>Madame</span>
+              </label>
+            </p>
+            <p>
+              <label class="col s1.2">
+                <input class="with-gap" name="genre" type="radio" />
+                <span>Non-binaire</span>
+              </label>
+            </p>
+            <p>
+                <label class="col s6">
+                  <input class="with-gap" name="genre" type="radio" />
+                  <span>Autre</span>
+                </label>
+              </p>
+        
+            <div class="row">
+              <div>
+                <div class="input-field col s3">
+                    <i class="material-icons prefix">group</i>
+                    <label for="nom">Nom</label>
+                  <input  id="nom" type="text" class="validate"> 
+                </div>
+
+                <div class="input-field col s3">
+                  <i class="material-icons prefix">face</i>
+                  <label for="prenom">Prénom</label>
+                  <input id="prenom" type="text" class="validate">
+                </div>
+              </div>
+
+              <div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">apartment</i>
+                  <label for="adresse">Adresse</label>
+                  <input id="adresse" type="text" class="validate"> 
+                </div>
+              </div>
+
+              <div>
+                <div class="input-field col s6">
+                  <span class="material-icons prefix">password</span>
+                  <label for="password">Mot de passe</label>
+                  <input id="password" type="password" class="validate">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <span class="material-icons prefix">lock</span>
+                  <label for="password">Confirer le mot de passe</label>
+                  <input id="confirmer_password" type="password" class="validate">
+                </div>
+              </div>
+              <div>
+                <div class="input-field col s6">
+                  <span class="material-icons prefix">alternate_email</span>
+                  <label for="email">Email</label>
+                  <input id="email" type="email" class="validate">
+                </div>
+              </div>
+                <p>Mes passions:</p>
+                <p class="col s1">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Informatique</span>
+                    </label>
+                </p>
+                <p class="col s1">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Voyage</span>
+                    </label>
+                </p>
+                <p class="col s1">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Sport</span>
+                    </label>
+                </p>
+                <p class="col s1">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Lecture</span>
+                    </label>
+                </p>
+                <button class="red darken-3 btn waves-effect waves-light" type="submit" name="action">Envoyer
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </section>
+                                <!------------------------FOOTER----------------------->
+    <footer class="red darken-3 page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Vous rencontrez un problème de connexion ?</h5>
+              <p class="grey-text text-lighten-4"><a class="grey-text text-lighten-3" href="#!"></a>Contactez-nous !</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Découvrir:</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Accueil</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Inscription</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Connexion</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Recherche</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2024 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">Voir plus</a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
