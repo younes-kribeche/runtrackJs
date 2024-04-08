@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Connexion LaPlateforme_</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="../scripts/script.js" defer></script>
+    <link rel="stylesheet" href="../style/style.css">
+  </head>
+
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg p-3 bg-primary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="../index.html"
+                >Accueil</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="h1 d-flex justify-content-center mb-4 mt-3 text-primary">
+      LaPlateforme_
+    </h1>
+
+    <div class="offset-4 card col-4 themed-grid-col p-4 mb-4">
+      <form class="d-flex flex-column gap-3 w-100">
+        <section class="d-flex gap-5">
+          <section class="w-30">
+            <label for="inputEmail3" class="form-label">Nom</label>
+            <input type="email" class="form-control" id="nom" />
+            <div id="div_message_erreur1"></div>
+          </section>
+          <section class="w-30">
+            <label for="inputEmail3" class="form-label">Prénom</label>
+            <input type="email" class="form-control" id="prenom" />
+            <div id="div_message_erreur2"></div>
+          </section>
+        </section>
+
+        <div class="gap-3 w-100">
+          <section class="w-100">
+            <label for="inputEmail3" class="form-label">Adresse Mail</label>
+            <input type="email" class="form-control" id="email" />
+            <small>
+              <p class="text-secondary mb-1" style="font-size: 70%">
+                Veuillez entrer votre adresse mail de La PLateforme.
+              </p>
+            </small>
+            <div id="div_message_erreur3"></div>
+          </section>
+        </div>
+
+        <div class="gap-3 w-90">
+          <section class="w-80">
+            <label for="inputEmail3" class="form-label">
+              Confirmer l'adresse Mail
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="verifemail"
+              oninput="check_email()"
+            />
+            <div id="div_message_erreur4"></div>
+          </section>
+        </div>
+
+        <div class="d-flex flex-column">
+          <div>
+
+          <section class="w-30">
+            <label for="inputPassword3" class="form-label">Mot de passe</label>
+            <div class="col-sm-12 d-flex flex-row gap-5">
+              <div>
+                <input type="password" class="form-control" id="mot_de_passe" />
+                <div id="div_message_erreur5" class="w-75 mh-1" ></div>
+              </div>
+              <div>
+                <input
+                type="password"
+                class="form-control"
+                id="confirmation_mdp"
+                oninput="check_mdp()"
+                placeholder="Confirmer mot de passe"
+              />
+              <div id="div_message_erreur6"></div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <div>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="checkbox" />
+              <label class="form-check-label">Voir le mot de passe</label>
+            </div>
+
+            <p class="text-center mt-4">
+              Vous possédez déjà un compte ? Connectez-vous
+              <a href="../index.html">ici</a>
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary w-50">S'inscrire</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
